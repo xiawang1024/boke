@@ -369,6 +369,8 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  overflow: hidden;
+  background: #fff;
 }
 .g-bd .m-anchor .anchor-list .list {
   float: left;
