@@ -1,0 +1,117 @@
+@import './common/index.styl'
+body
+	overflow auto
+	-webkit-overflow-scrolling: touch
+.g-hd
+	width 100%
+	overflow hidden
+	.m-hd {
+		width: 100%;
+		height: 120px;
+		line-height: 120px;
+		border-box();
+		padding: 0 40px;
+		text-align: center;
+		background: $color;
+		overflow: hidden;
+		clear: both;
+
+		.title {
+			font-size: 50px;
+			color: #fff;
+			// padding-left: 80px;
+			// background: url('../imgs/text_logo.png') left center no-repeat;
+			// background-size: auto 0.6rem;
+		}
+
+		.back-icon, .voice-icon, .share-icon {
+			extend-click();
+			float: left;
+			margin-top: 30px;
+			display: inline-block;
+			height: 60px;
+			width: 34px;
+			background: url('../imgs/back-icon.png') center center no-repeat;
+			background-size: cover;
+		}
+
+		.voice-icon {
+			margin-left: 55px;
+			width: 72px;
+			height: 60px;
+			background: url('../imgs/voice-icon.gif') center center no-repeat;
+			background-size: cover;
+		}
+
+		.share-icon {
+			float: right;
+			width: 73px;
+			height: 60px;
+			background: url('../imgs/share-icon.png') center center no-repeat;
+			background-size: cover;
+		}
+	}
+.g-bd
+	width 100%
+	padding 0 40px
+	border-box()
+	background #ffffff
+	.list-wrap
+		.list
+			display flex
+			align-items center
+			width 100%
+			padding 60px 0
+			// height 150px
+			border-1px(#ccc)
+			font-size 40px
+			border-box()	
+			.avatar-wrap
+				position relative
+				width 150px
+				height 150px	
+				.img
+					display block
+					width 100%	
+					height 100%
+					border-radius 50%
+					border 1px solid #eee
+				.v
+					position absolute
+					right 0
+					bottom 0
+					display inline-block
+					width 40px
+					height 40px
+					line-height 40px
+					text-align center
+					color #ffffff
+					background #fb8437
+					border-radius 50%
+			.name
+				flex 1
+				margin-left 60px
+				font-size 44px
+			.follow-btn
+				extend-click()
+				width 140px
+				height 80px
+				line-height 80px
+				border-radius 80px
+				background url('../imgs/add-follow.png') center center no-repeat #fb8437
+				background-size auto 0.6rem
+.g-ft
+	width 100%
+	height 150px
+	background #4499e1
+	color #fff
+	text-align center
+	overflow hidden
+	.version
+		margin-top 20px
+		font-size 36px
+		a
+			color #fff
+	.copy
+		margin-top 20px
+		font-size 36px
