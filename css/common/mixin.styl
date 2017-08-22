@@ -1,0 +1,43 @@
+border-1px($color)
+  position :relative
+  &::after
+  	display:block
+  	position:absolute
+  	left:0
+  	bottom:0
+  	width:100%
+  	border-top:1px solid $color
+  	content:' '
+
+bg-image($url)
+  background-image :url($url+"@2x.png")
+  @media (-webkit-min-device-pixel-ratio:3),(min-device-pixel-ratio:3)
+    background-image :url($url+"@3x.png")
+
+font-dpr($font-size)
+    font-size: $font-size;
+    @media (-webkit-min-device-pixel-ratio:2),(min-device-pixel-ratio:2)
+        font-size: $font-size * 2;
+    @media (-webkit-min-device-pixel-ratio:3),(min-device-pixel-ratio:3)
+        font-size: $font-size * 3;
+
+// 不换行
+no-wrap()
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap
+//盒子
+border-box()
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+// 扩展点击区域
+extend-click()
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: -20px
+    left: -20px
+    right: -20px
+    bottom: -20px

@@ -1,0 +1,459 @@
+@import './common/index.styl'
+body
+	overflow auto
+	-webkit-overflow-scrolling: touch
+.g-hd
+	position relative
+	width 100%
+	height 810px
+	overflow hidden
+	.m-bg
+		position absolute
+		z-index 0
+		width 100%
+		height 100%
+		font-size 0
+		.img
+			width 100%
+			height 100%
+	.m-hd
+		position relative
+		z-index 5
+		width 100%
+		height 120px
+		line-height 120px
+		border-box()
+		padding 0 40px
+		text-align center
+		overflow hidden
+		clear both
+		.title
+			font-size 50px
+			color #fff
+			padding-left 80px
+		.back-icon,.share-icon
+			extend-click()
+			float left
+			margin-top 30px
+			display inline-block
+			height 60px
+			width 34px
+			background url('../imgs/back-icon.png') center center no-repeat
+			background-size cover
+		.share-icon
+			float right
+			width 73px
+			height 60px
+			background url('../imgs/share-icon.png') center center no-repeat
+			background-size cover
+	.m-foot
+		display flex
+		align-items center
+		position absolute
+		bottom 60px
+		width 100%
+		border-box()
+		padding 0 40px
+		z-index 5
+		overflow hidden
+		.avatar-wrap
+			position relative
+			width 175px
+			.avatar
+				width 175px
+				height 175px
+				border-radius 50%
+				overflow hidden
+				border 2px solid #fff
+				.img
+					display block
+					width 100%
+					height 100%
+			.v
+				position absolute
+				right 0px
+				bottom 0
+				display inline-block
+				width 60px
+				height 60px
+				border-radius 50%
+				line-height 60px
+				background #fb8437
+				color #fff
+				text-align center
+				border 2px solid #fff
+		.info
+			width 440px
+			color #fff
+			margin-left 40px
+			.name
+				font-size 40px
+				line-height 1.75
+			.desc
+				font-size 34px
+				margin-top 30px
+				width 100%
+				no-wrap()
+		.ctrl
+			span
+				display inline-block
+				vertical-align middle
+				margin-left 30px
+				extend-click()
+				&:first-child
+					margin-left 0
+				&.list-icon
+					width 54px
+					height 35px
+					background url('../imgs/list-white-icon.png') center center no-repeat
+					background-size cover
+				&.timing-icon
+					width 56px
+					height 56px
+					background url('../imgs/timing-icon.png') center center no-repeat
+					background-size cover
+				&.barrage-icon
+					width 54px
+					height 56px
+					background url('../imgs/barrage-icon.png') center center no-repeat
+					background-size cover
+				&.praise-icon
+					width 51px
+					height 50px
+					background url('../imgs/praise-icon.png') center center no-repeat
+					background-size cover
+.g-small-play
+	display none
+	position fixed
+	z-index 50
+	top 0
+	width 100%
+	border-bottom 1px solid #ccc
+	.m-hd
+		position relative
+		z-index 5
+		width 100%
+		height 120px
+		line-height 120px
+		border-box()
+		padding 0 40px
+		text-align center
+		overflow hidden
+		clear both
+		background #fff
+		.title
+			height 100%
+			color $color
+			span
+				vertical-align middle
+				margin 0 6px
+			.play-btn
+				display inline-block
+				width 70px
+				height 70px
+				background url('../imgs/playBtn-small-icon.png') center center no-repeat
+				background-size cover
+				&.paused
+					background url('../imgs/pauseBtn-small-icon.png') center center no-repeat
+					background-size cover
+			.play-state
+				font-size 40px
+			.voice-icon
+				display inline-block
+				width 42px
+				height 40px
+				background url('../imgs/voice-small-icon.png') center  center no-repeat
+				background-size contain
+		.back-icon,.share-icon
+			extend-click()
+			float left
+			margin-top 30px
+			display inline-block
+			height 60px
+			width 34px
+			background url('../imgs/back-black-icon.png') center center no-repeat
+			background-size cover
+		.share-icon
+			float right
+			width 73px
+			height 60px
+			background url('../imgs/share-black-icon.png') center center no-repeat
+			background-size cover
+.g-play
+	width 100%
+	height 380px
+	border-box()
+	background #fff
+	overflow hidden
+	.progress-bar
+		position relative
+		z-index 10
+		height 40px
+		width 1000px
+		border-box()
+		margin 0 auto
+		top 10px
+		.bar-inner
+			position: relative
+			top: 15px
+			height: 10px
+			background: rgba(0, 0, 0, 0.3)
+			.progress
+				position: absolute
+				height: 100%
+				background: #1ba2ff
+      .progress-btn-wrapper
+				position: absolute
+				left: -30px
+				top: -22px
+				width: 60px
+				height: 60px
+				.progress-btn
+					position: relative
+					top: 4px
+					left: 8px
+					box-sizing: border-box
+					width: 50px
+					height: 50px
+					border: 4px solid #1ba2ff
+					border-radius: 50%
+					background:#fff
+		.play-time-wrap
+			position absolute
+			left 0
+			right 0
+			bottom -50px
+			border-box()
+			color #999
+			.current-time
+				float left
+			.duration
+				float right
+	.play-ctrl-wrap
+		display flex
+		height 100%
+		align-items center
+		justify-content center
+		background #fff
+		.ctrl
+			flex 1
+			text-align center
+			span
+				display inline-block
+				extend-click()
+				&.play-back-fifteen
+					width 68px
+					height 61px
+					background url('../imgs/play-back-fifteen.png')	center center no-repeat
+					background-size cover
+				&.play-go-fifteen
+					width 68px
+					height 61px
+					background url('../imgs/play-go-fifteen.png')	center center no-repeat
+					background-size cover
+				&.play-prev
+					width 50px
+					height 50px
+					background url('../imgs/play-prev-icon.png') center center no-repeat
+					background-size cover
+				&.play-next
+					width 50px
+					height 50px
+					background url('../imgs/play-next-icon.png') center center no-repeat
+					background-size cover
+				&.playOrPause
+					width 160px
+					height 160px
+					background url('../imgs/playBtn-icon.png') center center no-repeat
+					background-size cover
+					&.paused
+						background url('../imgs/pauseBtn-icon.png') center center no-repeat
+						background-size cover
+.g-info
+	width 100%
+	border-box()
+	margin-top 20px
+	padding 60px 40px
+	display flex
+	align-items center
+	justify-content center
+	background #fff
+	div
+		&.cover-wrap
+			width 200px
+			height 200px
+			overflow hidden
+			.img
+				display block
+				width 200px
+				height 200px
+		&.text-wrap
+			flex 1
+			margin-left 40px
+			.title
+				font-size 50px
+				color #333
+			.desc
+				margin-top 50px
+				font-size 40px
+				color #999
+				max-width 600px
+				no-wrap()
+		&.collect-wrap
+			text-align center
+			.collect-icon
+				display inline-block
+				width 51px
+				height 50px
+				background url('../imgs/collect-icon.png') center center no-repeat
+				background-size cover
+			.collect
+				display block
+				margin-top 10px
+				font-size 32px
+				color #999
+.g-tab-wrap
+	width 100%
+	height 160px
+	line-height 160px
+	display flex
+	justify-items center
+	align-items center
+	border-1px(#ccc)
+	margin-top 20px
+	background #fff
+	.tab
+		flex 1
+		text-align center
+		font-size 60px
+		&.z-crt
+			color #fb8437
+			border-bottom 5px solid #fb8437
+.g-tab-content
+	width 100%
+	padding 0 40px
+	border-box()
+	background #fff
+	.recommend-list
+		width 100%
+		border-box()
+		.list
+			position relative
+			width 100%
+			border-box()
+			display flex
+			padding 60px 0
+			border-1px(#ccc)
+			.avatar
+				display block
+				width 230px
+				height 230px
+			.text-wrap
+				flex 1
+				margin-left 60px
+				overflow hidden
+				.title
+					margin-top 18px
+					font-size 50px
+					color #333
+				.desc
+					width 100%
+					border-box()
+					margin-top 36px
+					font-size 40px
+					color #999
+					no-wrap()
+				.tag-wrap
+					margin-top 40px
+					.tag
+						display inline-block
+						margin-left 10px
+						height 36px
+						line-height 36px
+						padding 4px 10px
+						font-size 28px
+						border 1px solid #fb8437
+						color #fb8437
+			.list-count
+				position absolute
+				right 0
+				bottom 60px
+				color #999
+				font-size 30px
+				padding-left 50px
+				background url('../imgs/list-icon.png') left center no-repeat
+				background-size 0.27rem auto
+	.comment-list
+		display none
+		width 100%
+		border-box()
+		.list
+			width 100%
+			display flex
+			padding 60px 0
+			border-box()
+			// border-1px(#ccc)
+			.cover
+				flex-basis 1.25rem
+				.img
+					display block
+					width 100px
+					height 100px
+			.text
+				flex 1
+				.title
+					font-size 30px
+					color #666
+				.desc
+					// max-width 710px
+					margin-top 30px
+					line-height 1.75
+					font-size 40px
+					color #666
+					background #eee
+					padding 30px 38px
+					border-radius 12px
+.g-recommend
+	position fixed
+	bottom 0
+	display flex
+	align-items center
+	width 100%
+	height 180px
+	line-height 180px
+	border-box()
+	padding 0 40px
+	border-top 1px solid #ccc
+	background #fff
+	.ipt
+		flex 1
+		height 90px
+		border-radius 90px
+		border 2px solid #1ba2ff
+		outline none
+	.send-btn
+		margin-left 50px
+		width 140px
+		height 80px
+		line-height 80px
+		background #1ba2ff
+		border-radius 10px
+		font-size 38px
+		color #fff
+		border none
+		outline none
+.g-ft
+	width 100%
+	height 150px
+	background #4499e1
+	color #fff
+	text-align center
+	overflow hidden
+	.version
+		margin-top 20px
+		font-size 36px
+		a
+			color #fff
+	.copy
+		margin-top 20px
+		font-size 36px
