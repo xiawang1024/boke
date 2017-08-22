@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "stylus-px2rem": "^1.0.14"
+  }
+}
