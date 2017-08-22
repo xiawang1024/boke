@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>河南广播网</title>
+    <link rel="stylesheet" href="./css/personal-data.css">
+    <script src="./js/flexible.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="g-hd">
+        <div class="m-hd">
+            <span class="back-icon"></span>
+            <!-- <span class="voice-icon"></span> -->
+            <span class="title">个人资料</span>
+            <!-- <span class="share-icon"></span> -->
+        </div>
+    </div>
+    <div class="g-bd">
+        <ul class="list-wrap">
+            <li class="list">
+                <span class="key">头像</span>
+                <span class="val">
+                    <img src="./images/avatar1.png" alt="" class="img">
+                </span>
+            </li>
+            <li class="list">
+                <span class="key">昵称</span>
+                <span class="val">暖色托帕石</span>
+            </li>
+            <li class="list">
+                <span class="key">性别</span>
+                <span class="val">女</span>
+            </li>
+            <li class="list">
+                <span class="key">生日</span>
+                <span class="val">未填写</span>
+            </li>
+            <li class="list">
+                <span class="key">地区</span>
+                <span class="val">未填写</span>
+            </li>
+            <li class="list">
+                <span class="key">简介</span>
+                <span class="val">未填写</span>
+            </li>
+        </ul>
+    </div>
+    <!-- <div class="g-ft">
+        <p class="version">
+            <a href="http://www.hndt.com/index.mb.html">触摸版</a> |
+            <a href="http://www.hndt.com">电脑版</a> |
+            <a href="http://www.hndt.com/index.mb.html">APP版</a>
+        </p>
+        <p class="copy">
+            手机河南广播网 ICP：豫ICP备14003020号
+        </p>
+    </div> -->
+    <script src="./js/fastclick.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        //移动端实现button:active
+        document.body.addEventListener('touchstart', function () { });
+        if ('addEventListener' in document) {
+            document.addEventListener('DOMContentLoaded', function () {
+                FastClick.attach(document.body);
+            }, false);
+        }
+
+    </script>
+    <script src="./js/jquery.js" charset="utf-8"></script>
+    <script src="./js/anchor.js" charset="utf-8"></script>
+</body>
+
+</html>
