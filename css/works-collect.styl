@@ -1,0 +1,185 @@
+@import './common/index.styl'
+body
+	overflow auto
+	-webkit-overflow-scrolling: touch
+.g-hd
+	width 100%
+	overflow hidden
+	.m-hd {
+		width: 100%;
+		height: 120px;
+		line-height: 120px;
+		border-box();
+		padding: 0 40px;
+		text-align: center;
+		background: $color;
+		overflow: hidden;
+		clear: both;
+
+		.title {
+			font-size: 50px;
+			color: #fff;
+			padding-left: 80px;
+			background: url('../imgs/text_logo.png') left center no-repeat;
+			background-size: auto 0.6rem;
+		}
+
+		.back-icon, .voice-icon, .share-icon {
+			extend-click();
+			float: left;
+			margin-top: 30px;
+			display: inline-block;
+			height: 60px;
+			width: 34px;
+			background: url('../imgs/back-icon.png') center center no-repeat;
+			background-size: cover;
+		}
+
+		.voice-icon {
+			margin-left: 55px;
+			width: 72px;
+			height: 60px;
+			background: url('../imgs/voice-icon.gif') center center no-repeat;
+			background-size: cover;
+		}
+
+		.share-icon {
+			float: right;
+			width: 73px;
+			height: 60px;
+			background: url('../imgs/share-icon.png') center center no-repeat;
+			background-size: cover;
+		}
+	}
+.g-basic-info
+	width 100%
+	height 280px
+	display flex
+	align-items center
+	background #ffffff
+	border-box()
+	padding 0 40px
+	.avatar-wrap
+		width  160px
+		height 160px
+		margin-left 30px
+		border-radius 50%
+		overflow hidden
+		.img
+			display block
+			width 100%
+			height 100%
+	.text-wrap
+		margin-left 70px
+		.name
+			font-size 40px
+			color #333333
+		.follow-fans
+			margin-top 32px
+			font-size 38px
+			color #999999
+			.num
+				margin-left 8px
+				color #fb8c44;
+			.fans-wrap
+				margin-left 12px
+.g-detail-info,.g-about-info
+	width 100%
+	margin-top 20px
+	background #ffffff			
+	.item
+		display flex
+		align-items center
+		width 100%
+		height 150px
+		border-box()
+		padding 0 40px
+		border-bottom 1px solid #cccccc
+		&:nth-child(1)
+			.icon
+				width 60px
+				height 60px
+				background url('../imgs/follow-icon.png') center center no-repeat
+				background-size cover
+		&:nth-child(2)
+			.icon
+				width 52px
+				height 50px
+				background url('../imgs/works-icon.png') center center no-repeat
+				background-size cover
+		&:nth-child(3)
+			.icon
+				width 58px
+				height 63px
+				background url('../imgs/fans-icon.png') center center no-repeat
+				background-size cover
+		.icon
+			display inline-block
+		.text
+			flex 1
+			margin-left 45px
+			font-size 50px
+			color #333333
+		.more
+			display inline-block
+			width 100px
+			height 100%
+			// margin-top 54px
+			background url('../imgs/detail-icon.png') right center no-repeat
+			background-size auto 0.39rem
+.g-about-info
+	.item
+		&:nth-child(1) {
+			.icon {
+				width: 52px;
+				height: 67px;
+				background: url('../imgs/news-icon.png') center center no-repeat;
+				background-size: cover;
+			}
+		}
+
+		&:nth-child(2) {
+			.icon {
+				width: 57px
+				height: 66px;
+				background: url('../imgs/grade-icon.png') center center no-repeat;
+				background-size: cover;
+			}
+		}
+
+		&:nth-child(3) {
+			.icon {
+				width: 47px;
+				height: 62px;
+				background: url('../imgs/person-icon.png') center center no-repeat;
+				background-size: cover;
+			}
+		}
+.g-login-out
+	margin-top 20px
+	width 100%
+	height 160px
+	background #ffffff
+	.btn
+		display inline-block
+		width 100%
+		height 100%
+		border none 
+		background #ffffff
+		color #fb8437;
+		font-size 48px
+.g-ft
+	width 100%
+	height 150px
+	background #4499e1
+	color #fff
+	text-align center
+	overflow hidden
+	.version
+		margin-top 20px
+		font-size 36px
+		a
+			color #fff
+	.copy
+		margin-top 20px
+		font-size 36px
