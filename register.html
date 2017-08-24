@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>河南广播网</title>
+    <link rel="stylesheet" href="./css/register.css">
+    <script src="./js/flexible.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="g-hd">
+        <div class="m-hd">
+            <span class="back-icon"></span>
+            <!-- <span class="voice-icon"></span> -->
+            <span class="title">注册</span>
+            <!-- <span class="share-icon"></span> -->
+            <!-- <span class="login-up">注册</span> -->
+        </div>
+    </div>
+    <div class="g-bd">
+        <form class="submit">
+            <p class="phone">
+                <input type="tel" id="account" placeholder="手机号">
+            </p>
+            <p class="verification-code">
+                <input type="text" id="code" placeholder="验证码">
+                <span class="send-code">发送验证短信</span>
+            </p>
+            <p class="password">
+                <input type="password" id="password" placeholder="登录密码">
+            </p>
+        </form>
+        <button class="register-btn">注册</button>
+        <p class="agreement-wrap">
+            <span class="yesOrNo"></span>本人已阅读并同意<a href="" class="agressment-link">注册协议</a>
+        </p>
+    </div>
+    <!-- <div class="g-ft">
+        <p class="version">
+            <a href="http://www.hndt.com/index.mb.html">触摸版</a> |
+            <a href="http://www.hndt.com">电脑版</a> |
+            <a href="http://www.hndt.com/index.mb.html">APP版</a>
+        </p>
+        <p class="copy">
+            手机河南广播网 ICP：豫ICP备14003020号
+        </p>
+    </div> -->
+    <script src="./js/fastclick.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        //移动端实现button:active
+        document.body.addEventListener('touchstart', function () { });
+        if ('addEventListener' in document) {
+            document.addEventListener('DOMContentLoaded', function () {
+                FastClick.attach(document.body);
+            }, false);
+        }
+
+    </script>
+    <script src="./js/jquery.js" charset="utf-8"></script>
+    <script src="./js/register.js" charset="utf-8"></script>
+</body>
+
+</html>
