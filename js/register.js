@@ -56,7 +56,7 @@ $(function() {
             //异步提交数据...
             layer.open({
                 type:2,
-                content:'玩命登录中...'
+                content:'玩命注册中...'
             })
             //模拟异步登录3s
             setTimeout(function() {
