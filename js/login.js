@@ -6,17 +6,25 @@ $(function() {
     submitBtn.click(function() {
         account = $('#account').val()
         password = $('#password').val()
-
+        if(!account) {
+            toastOpen('请输入用户名')
+            return 
+        }
+        if(!password) {
+            toastOpen('请输入密码')
+            return
+        }
         if(!isSubmitClick) {
-            if (account && password) {
-                //发送异步请求...
-                sendData(account, password)
-            }else{
-                //有一个空字段
-                console.log('------------------------------------');
-                console.log('帐号密码不能为空');
-                console.log('------------------------------------');
-            }
+            //异步提交数据
+            layer.open({
+                type: 2,
+                content: '玩命登录中...'
+            })
+            sendData(account, password)
+            //模拟异步
+            setTimeout(function() {
+                layer.closeAll()
+            },3000)
         }else{
             return
         }
@@ -27,5 +35,15 @@ $(function() {
         console.log('------------------------------------');
         console.log(account + ',' + password);
         console.log('------------------------------------');
+    }
+    /**
+     * layer.open 封装
+     * @param {string} content 
+     */
+    function toastOpen(content) {
+        layer.open({
+            content: content,
+            time: 2
+        })
     }
 })
