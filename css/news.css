@@ -241,7 +241,7 @@ body {
 }
 .g-bd .list-wrap .list .content {
   display: flex;
-  margin-top: 0.37037037037037rem;
+  margin-top: 0.277777777777778rem;
 }
 .g-bd .list-wrap .list .content .avatar {
   display: block;
@@ -250,6 +250,7 @@ body {
   border-radius: 50%;
 }
 .g-bd .list-wrap .list .content .text {
+  flex: 1;
   margin-left: 0.37037037037037rem;
   border: 1px solid #eee;
   padding: 0.37037037037037rem;
