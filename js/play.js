@@ -242,4 +242,60 @@ $(function(){
       $('.g-recommend').css('display','none')
     }
   }
+
+  //收藏
+  $('.collect-wrap').click(function(){
+    if($(this).hasClass('z-crt')){
+      $(this).removeClass('z-crt')
+      toastOpen('取消收藏',"msg")
+    }else{
+      $(this).addClass('z-crt')
+      toastOpen('收藏', "msg")
+    }
+  })
+
+  //头部控制
+  var ctrlBtns = $('.g-hd .ctrl span');
+  ctrlBtns.click(function(){
+    var index = $(this).index();
+    if(index >= 1){
+      switch(index){
+        case 3:{
+          if($(this).hasClass('z-crt')){
+            //取消点赞
+            $(this).removeClass('z-crt')
+            toastOpen('取消点赞','msg')
+          }else{
+            //点赞
+            $(this).addClass('z-crt')
+            toastOpen('点赞', 'msg')
+          }
+          break;
+        }
+        default:{
+          toastOpen('更多功能体验，请下载河南广播APP')
+        }
+      }
+    }else{
+      return
+    }
+  })
+  /**
+     * layer.open 封装
+     * @param {string} content 
+     */
+  function toastOpen(content, type) {
+    if (type && type.length > 0) {
+      layer.open({
+        content: content,
+        time: 2,
+        skin: 'msg'
+      })
+    } else {
+      layer.open({
+        content: content,
+        time: 2
+      })
+    }
+  }
 })

@@ -325,6 +325,10 @@ body {
   background: url("../imgs/praise-icon.png") center center no-repeat;
   background-size: cover;
 }
+.g-hd .m-foot .ctrl span.praise-icon.z-crt {
+  background: url("../imgs/praise-yes-icon.png") center center no-repeat;
+  background-size: cover;
+}
 .g-small-play {
   display: none;
   position: fixed;
@@ -580,6 +584,13 @@ body {
   margin-top: 0.092592592592593rem;
   font-size: 0.296296296296296rem;
   color: #999;
+}
+.g-info div.collect-wrap.z-crt .collect-icon {
+  display: inline-block;
+  width: 0.472222222222222rem;
+  height: 0.462962962962963rem;
+  background: url("../imgs/collect-yes-icon.png") center center no-repeat;
+  background-size: cover;
 }
 .g-tab-wrap {
   width: 100%;

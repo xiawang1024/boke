@@ -293,6 +293,10 @@ body {
   right: -0.185185185185185rem;
   bottom: -0.185185185185185rem;
 }
+.g-bd .list-wrap .list .follow-btn.z-crt {
+  background: url("../imgs/added-follow.png") center center no-repeat #999;
+  background-size: auto 0.45rem;
+}
 .g-ft {
   width: 100%;
   height: 1.388888888888889rem;

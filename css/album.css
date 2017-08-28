@@ -295,12 +295,20 @@ body {
   background: url("../imgs/praise-black-icon.png") center center no-repeat;
   background-size: contain;
 }
+  .g-anchor-info .interact-wrap .z-crt.item:nth-child(1) .icon {
+  background: url("../imgs/praise-yes-icon.png") center center no-repeat;
+  background-size: contain;
+}
 .g-anchor-info .interact-wrap .item:nth-child(2) .icon {
   background: url("../imgs/share-black-icon.png") center center no-repeat;
   background-size: contain;
 }
 .g-anchor-info .interact-wrap .item:nth-child(3) .icon {
   background: url("../imgs/download-all-icon.png") center center no-repeat;
+  background-size: contain;
+}
+  .g-anchor-info .interact-wrap .z-crt.item:nth-child(4) .icon {
+  background: url("../imgs/collect-yes-icon.png") center center no-repeat;
   background-size: contain;
 }
 .g-anchor-info .interact-wrap .item:nth-child(4) .icon {
