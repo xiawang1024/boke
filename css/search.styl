@@ -1,0 +1,154 @@
+@import './common/index.styl'
+body
+	overflow auto
+	-webkit-overflow-scrolling: touch
+.g-hd {
+	width: 100%;
+	overflow: hidden;
+
+	.m-hd {
+		width: 100%;
+		height: 120px;
+		border-box();
+		padding: 0 40px;
+		text-align: center;
+		background: $color;
+		overflow: hidden;
+		clear: both;
+
+		.title {
+			font-size: 50px;
+			color: #fff;
+			line-height: 120px;
+			// padding-left: 80px;
+			// background: url('../imgs/text_logo.png') left center no-repeat;
+			// background-size: auto 0.6rem;
+		}
+
+		.back-icon, .voice-icon, .share-icon {
+			extend-click();
+			float: left;
+			margin-top: 30px;
+			display: inline-block;
+			height: 60px;
+			width: 34px;
+			background: url('../imgs/back-icon.png') center center no-repeat;
+			background-size: cover;
+		}
+
+		.voice-icon {
+			margin-left: 55px;
+			width: 72px;
+			height: 60px;
+			background: url('../imgs/voice-icon.gif') center center no-repeat;
+			background-size: cover;
+		}
+
+		.share-icon {
+			float: right;
+			width: 73px;
+			height: 60px;
+			background: url('../imgs/share-icon.png') center center no-repeat;
+			background-size: cover;
+		}
+
+		.login-up {
+			float: right;
+			margin-top: 34px;
+			color: #ffffff;
+			border: 1px solid #ffffff;
+			padding: 6px 8px;
+			extend-click();
+		}
+	}
+}
+.g-search	
+	width 100%
+	border-box()
+	padding 20px 40px
+	background #ffffff
+	overflow hidden
+	flex-box()
+	input 
+		width 75%
+		height 100px
+		border 1px solid #cccccc
+		border-radius 10px
+		border-box()
+		padding-left 30px
+		font-size 34px
+	.sch-btn
+		width 20%
+		height 100px
+		border none
+		border-box()
+		background #0081dc
+		border-radius 10px
+		color #ffffff
+		font-size 34px
+.g-bd
+	width 100%
+	border-box()
+	.sch-list
+		width 100%
+		border-box()
+		margin-top 20px
+		overflow hidden
+		background: #fff;
+		padding 0 40px
+		.title
+			width 100%
+			height 100px
+			line-height 100px
+			font-size 36px
+			border-1px(#ccc)
+			color #666666
+		.list-wrap
+			width 100%
+			border-box()
+			.list
+				width 100%
+				height 140px
+				border-1px(#ccc)
+				font-size 0
+				.list-link
+					display block
+					width 100%
+					height 140px
+					display flex
+					align-items center
+					.avatar
+						width 100px
+						height 100px
+					.name,.album-name
+						display block
+						margin-left 30px
+						font-size 40px
+						color #000000
+					.album-name
+						color #999999
+		.more
+			width 100%
+			height 100px
+			line-height 100px
+			font-size 36px
+			padding-left 60px
+			background url('../imgs/sch-blue-icon.png') left center no-repeat
+			background-size auto 0.4rem
+			a
+				color: #0081dc;
+.g-ft
+	width 100%
+	height 150px
+	background #4499e1
+	color #fff
+	text-align center
+	overflow hidden
+	.version
+		margin-top 20px
+		font-size 36px
+		a
+			color #fff
+	.copy
+		margin-top 20px
+		font-size 36px
